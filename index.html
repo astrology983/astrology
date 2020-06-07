@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        ASTROLOGY
+    </title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+   
+    function showSearchBar(){
+        document.getElementById("bar").style.display = "inline-block";
+        document.getElementById("navBar").style.display ="none";
+    }
+     function closeSearchBar(){
+        document.getElementById("bar").style.display = "none";
+        document.getElementById("navBar").style.display ="block";
+    }
+    </script>
+    
+    </head>
+
+<body>
+    
+    <div id="main">
+    <div id="navBar">
+        <ul id="navList" >
+            <li class="navBarItem" id="pageTitle"> <a class="navBarLink" href="#">ASTROLOGY.CO.IN</a> </li>
+            <li class="navBarItem"> <a class="navBarLink" href="#"> Home</a> </li>
+            <li class="navBarItemWithMenu"> <a class="navBarLink" href="#"> Horoscope 
+                
+                </a><i class="fa fa-caret-down" style=""></i>
+                <div class="subMenu">
+                    <ul style="list-style: none">
+                        <li> <a class="subMenuLink" href="#"> Link 1</a> </li>
+                        <li> <a class="subMenuLink" href="#"> Link 2</a> </li>
+                        <li> <a class="subMenuLink" href="#"> Link3</a></li>
+
+                    </ul>
+                </div>
+            </li>
+            <li class="navBarItemWithMenu"> <a class="navBarLink" href="#"> Zodiac Sign</a>
+                <div class="subMenu">
+                    <ul style="list-style: none">
+                        <li> <a class="subMenuLink" href="#"> Link 4</a> </li>
+                        <li> <a class="subMenuLink" href="#"> Link 5</a> </li>
+                        <li> <a class="subMenuLink" href="#"> Link 6</a></li>
+
+                    </ul>
+                </div>
+            </li>
+            <li class="navBarItemWithMenu"> <a class="navBarLink" href="#">Kundali</a>
+                <div class="subMenu">
+                    <ul style="list-style: none">
+                        <li> <a class="subMenuLink" href="#"> Link 4</a> </li>
+                        <li> <a class="subMenuLink" href="#"> Link 5</a> </li>
+                        <li> <a class="subMenuLink" href="#"> Link 6</a></li>
+
+                    </ul>
+                </div>
+            </li>
+            <li class="navBarItemWithMenu"> <a class="navBarLink" href="#"> Store</a>
+                <div class="subMenu">
+                    <ul style="list-style: none">
+                        <li> <a class="subMenuLink" href="#"> Link 4</a> </li>
+                        <li> <a class="subMenuLink" href="#"> Link 5</a> </li>
+                        <li> <a class="subMenuLink" href="#"> Link 6</a></li>
+
+                    </ul>
+                </div>
+            </li>
+            <button onclick="showSearchBar()" style="border: none;margin-top: 2;background-color:white">
+            <li class="search"><a href="#" class="navBarItem" style="font-size: 2vw;color: black"> <i class="fa fa-search"></i></a>
+                
+            </li>
+                </button>
+    
+
+           
+            
+
+        </ul>
+    </div>
+   <div id="bar">
+                <div style="width: 100%;align-content: flex-end"> <i onclick="closeSearchBar()" class="fa fa-close" style="font-size: 20;text-align: end;float:right;color: black;margin-right:30;"></i>
+       </div>
+      
+       <div style="width: 100%;">            
+       <input alt="hello" id="searchBar" type="text" placeholder=  "Search">
+       </div>         
+       
+       </div>
+    <div class="adSpace">
+    <h2>ad space</h2>
+    </div>
+    </div>
+    
+    
+    </body>
+
+</html>
