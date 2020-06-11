@@ -1,24 +1,36 @@
+html {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    ;
+}
+
 body {
-    
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-    display: block;
+    padding: 0px;
+    margin: 0px;
+    /* width: 98%; */
+
+    /* display: block; */
+    /* display: inline-flexbox; */
     text-align: center;
-
-
-
+    font-family: "candara";
+    /* height: 3000px; */
+    /* color:; */
 }
-#main{
-    height: 370px;
-    background-image: url("https://i.ytimg.com/vi/TpY2dLeIWjs/maxresdefault.jpg");
+
+#main {
+    height: 500px;
+    /* background-image: url("https://i.ytimg.com/vi/TpY2dLeIWjs/maxresdefault.jpg"); */
+    background-image: linear-gradient(#FA8F41, #FD7150 60%);
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: contain;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }
+
 #navBar {
     height: 5vw;
-    background-color: white;
-    opacity: 0.6;
     /* background-color-op; */
     width: 100%;
 }
@@ -29,22 +41,18 @@ body {
     margin: bottom:0px;
     vertical-align: middle;
     text-align: center;
-    font-family: "candara";
     letter-spacing: -0.5;
     /*    color: white;*/
-    font-size: 2vw;
-
+    font-size: 18px;
     padding: 0 1vw 0 1vw
 }
 
 .navBarLink {
     padding-top: 0;
     text-decoration: none;
-    color: black;
+    color: white;
     margin: 0 20 0 20;
     /*    background-color:;*/
-
-
 }
 
 #searchBar {
@@ -53,30 +61,31 @@ body {
     background-size: contain;
     color: black;
     background-color: white;
-/*    border: 0.5px black solid;*/
+    /*    border: 0.5px black solid;*/
     height: 35px;
     border-radius: 5px;
     margin: 0 20 0 20;
-    width:75%;
+    width: 75%;
     margin-top: 20px;
     margin-left: 0;
-    
-/*    text-align:center;*/
-/*    padding: 10px 30px 12px 20px;*/
+    /*    text-align:center;*/
+    /*    padding: 10px 30px 12px 20px;*/
     padding-left: 35px;
     font-size: 18;
-
-
-
 }
 
 .navBarLink:hover {
-    background-color: orange;
-    opacity: 1;
-    border-radius: 10px;
-    padding: 2;
-    /*    height: 50;*/
-    /*    width: 50%;*/
+    padding-bottom: 6px;
+    border-bottom-color: white;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}
+
+#current {
+    padding-bottom: 6px;
+    border-bottom-color: white;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
 }
 
 /*
@@ -88,23 +97,16 @@ body {
 }
 */
 
-
-
 #navList {
     list-style: none;
-    float: left;
+    padding: 0;
+    /* float: left; */
+    display: inline-block;
+    /* margin: auto; */
+    /* text-align: center; */
+    width: 100%;
     /* margin: 5 0 0 0; */
-
-
 }
-
-.subMenu {
-    display: none;
-/*    margin-right: 120;*/
-/*    padding-right: 20px;*/
-
-}
-
 
 .navBarItemWithMenu {
     float: left;
@@ -115,19 +117,17 @@ body {
     font-family: "candara";
     letter-spacing: -0.5;
     /*    color: white;*/
-    font-size: 2vw;
-
+    font-size: 18px;
     padding: 0 1vw 0 1vw
 }
 
-.navBarItemWithMenu:hover .subMenu {
+/* .navBarItemWithMenu:hover .subMenu {
     background-color: white;
     display: block;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    padding-right:  10;
-
-}
+    padding-right: 10;
+} */
 
 #ham:hover #options {
     display: block;
@@ -144,18 +144,16 @@ body {
     letter-spacing: -0.5;
     color: white;
     font-size: 2vw;
-
 }
 
 #bar {
     background-color: white;
     padding: 10 10 10 10;
     display: none;
-/*    margin-top: 20px;*/
-/*    margin-right: 100px;*/
+    /*    margin-top: 20px;*/
+    /*    margin-right: 100px;*/
     width: 100%;
     height: 100;
-   
 }
 
 .search:hover .bar {
@@ -170,18 +168,231 @@ body {
     background-color: white;
     display: inline-block;
     margin-top: 20vw;
+}
+
+#pageTitle {
+    width: 20vw;
+    margin-right: 50px;
+    font-size: 1.3vw;
+    font-weight: 100;
+}
+
+.adSpace {
+    margin: 20;
+    border: 1px solid red;
+    border-radius: 10;
+    width: 60%;
+    background-color: whitesmoke;
+    height: 5vw;
+    margin: auto;
+    /* position: sticky; */
+    /* display: block; */
+    /* position: relative; */
+}
+
+.subMenuLink {
+    text-decoration: none;
+    color: black;
+}
+
+#subMenu1 {
+    display: none;
+    background-color: white;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+#subMenu2 {
+    display: none;
+    background-color: white;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+#subMenu3 {
+    display: none;
+    background-color: white;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+#subMenu4 {
+    display: none;
+    background-color: white;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+#signs-list {
+    list-style: none;
+}
+
+.signs {
+    /* float: right; */
+}
+
+.icon-name {
+    list-style: none;
+    float: left;
+    position: relative;
+    padding: 0;
+    margin: auto;
+    margin-top: 50px;
+    /* margin-left: 5vw; */
+}
+
+.icon {
+    float: left;
+    /* position: relative; */
+    /* width: 100%; */
+}
+
+.name {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 70px;
+    padding: 0;
+    /* float: left; */
+}
+
+#zodiac-signs {
+    /* position: fixed; */
+    padding-top: 3vw;
+    width: 100%;
+    margin-left: 2vw;
+    height: 10vw;
+}
+
+@media screen and (max-width:1500px) {
+    .icon-name {
+        padding: 5;
+        margin-top: 0;
+        /* margin-left: 5vw; */
+    }
+
+    #pageTitle {
+        width: 13vw;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .icon-name {
+        padding: 5;
+        margin-top: 0;
+        /* margin-left: 5vw; */
+    }
+
+    #pageTitle {
+        width: 12vw;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #pageTitle {
+        width: 100%;
+        /* display: none; */
+    }
+
+    .adSpace {
+        margin-top: 4vw;
+    }
+
+    .icon-name {
+        padding: 10;
+        margin-top: 0;
+        /* margin-left: 5vw; */
+    }
+
+    .name {
+        margin-top: 40px;
+    }
+
+    .navBarItem {
+        padding: 0.6vw;
+    }
+
+    .navBarItemWithMenu {
+        padding: 0.6vw;
+    }
+}
 
 }
-#pageTitle{
-    width: 20vw ;
-    margin-right: 50px ;
-    
+
+@media screen and (max-width:1000px) {
+    #pageTitle {
+        display: none;
+    }
+
+    .navBarItem {
+        padding: 0.8vw;
+    }
+
+    .navBarItemWithMenu {
+        padding: 0.8vw;
+    }
+
+    .adSpace {
+        margin-top: 2vw;
+    }
+
+    #zodiac-signs {
+        margin-top: 4vw;
+        width: 100%;
+        margin-left: 0.5vw;
+        /* padding-left: 200px; */
+        /* display: inline; */
+    }
 }
-.adSpace{
-    margin: 20;
-    width: 60%;
-    background-color: white;
-    height: 80px;
-    text-align: center;
-    display: inline-block;
+
+@media screen and (max-width:900px) {
+    #pageTitle {
+        display: none;
+    }
+
+    .navBarItem {
+        padding: 0.5vw;
+    }
+
+    .navBarItemWithMenu {
+        padding: 0.5vw;
+    }
+
+    .navBarLink {
+        margin: 0 10 0 10;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #pageTitle {
+        display: none;
+    }
+
+    .navBarItem {
+        padding: 0;
+        padding-left: 10;
+    }
+
+    .navBarItemWithMenu {
+        padding: 0;
+        padding-left: 10;
+    }
+
+    .navBarLink {
+        margin: 0 10 0 10;
+    }
+
+    .adSpace {
+        margin-top: 3vw;
+    }
+
+    #zodiac-signs {
+        margin-top: 0.1vw;
+        width: 100%;
+        margin-left: 0.5vw;
+        /* padding-left: 200px; */
+        /* display: inline; */
+    }
+
+    .icon-name {
+        padding: 20;
+        margin-top: 0;
+        /* margin-left: 5vw; */
+    }
 }

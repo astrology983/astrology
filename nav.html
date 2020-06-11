@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet" type="text/css">
+
+    <link href="icons.css" rel="stylesheet" type="text/css">
+    <link href="sign-up.css" rel="stylesheet" type="text/css">
+    <link href="login.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script>
+        var i = 0;
+        var icon = "fa fa-caret-down"
+        function showSearchBar() {
+            document.getElementById("bar").style.display = "block";
+            document.getElementById("navBar").style.display = "none";
+        }
+        function closeSearchBar() {
+            document.getElementById("bar").style.display = "none";
+            document.getElementById("navBar").style.display = "block";
+        }
+        function showSubMenu(num) {
+            if (i == 0) {
+
+
+                document.getElementById("subMenu" + num).style.display = "block";
+                document.getElementById('i' + num).className = "fa fa-caret-up"
+
+                i = 1
+            }
+            else if (i == 1) {
+
+
+                document.getElementById("subMenu".concat(num)).style.display = "none";
+                document.getElementById('i'.concat(num)).className = "fa fa-caret-down"
+
+                i = 0
+            }
+        }
+        // window.onclick = function (event) {
+        //     if (event.target == document.getElementById('signUpPopUp')) {
+        //         document.getElementById('signUpPopUp').style.display = "none";
+
+        //     }
+        function showSignUp() {
+            closeLogin();
+            document.getElementById('signUpPopUp').style.display = "block";
+        }
+        function closeSignUp() {
+            document.getElementById('signUpPopUp').style.display = "none";
+        }
+        function showLogin() {
+            closeSignUp();
+            document.getElementById('loginPopUp').style.display = "block";
+        }
+        function closeLogin() {
+            document.getElementById('loginPopUp').style.display = "none";
+        }
+
+
+
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <div id="main">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <a class="navbar-brand" href="#"><span style="font-weight: 700;font-size: xx-large;">
+                    <!-- <img src="favicon-32x32.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+                    ASTROLOGY</span>.CO.IN</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span style="font-weight: 600;">HOROSCOPE</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">link 1</a>
+                            <a class="dropdown-item" href="#">link2</a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a class="dropdown-item" href="#">link 3</a>
+                            <!-- </div> -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span style="font-weight: 600;">ZODIAC SIGNS</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">link 1</a>
+                            <a class="dropdown-item" href="#">link2</a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a class="dropdown-item" href="#">link 3</a>
+                            <!-- </div> -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span style="font-weight: 600;">KUNDALI</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">link 1</a>
+                            <a class="dropdown-item" href="#">link2</a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a class="dropdown-item" href="#">link 3</a>
+                            <!-- </div> -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span style="font-weight: 600;">STORE</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">link 1</a>
+                            <a class="dropdown-item" href="#">link2</a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a class="dropdown-item" href="#">link 3</a>
+                            <!-- </div> -->
+                    </li>
+                    <li class="nav-item"><a class="nav-link" onclick="showSignUp()">SIGN UP</a></li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+        <div class="adSpace">
+            <!-- <img src="https://images2.minutemediacdn.com/image/upload/c_crop,h_2912,w_4328,x_20,y_0/v1562080363/shape/mentalfloss/29942-gettyimages-155302141.jpg?itok=UCIQE7-4"  > -->
+            <h2 style="position: absolute;margin: auto; left: 45%;">ad space</h2>
+
+        </div>
+        <h3 style="color: white;text-align: center;">CHOOSE YOUR ZODIAC SIGN </h3>
+        <hr style="width: 8vw; border: 2px solid white;">
+        <div id="zodiac-signs">
+
+            <ul id="signs-list">
+                <li class="sign">
+                    <a href="#">
+                        <ul class="icon-name">
+                            <li class="icon"><i class="ai aries"></i></li>
+                            <li class="name">aries </li>
+                        </ul>
+                    </a>
+                </li>
+                <li class="sign">
+                    <ul class="icon-name">
+                        <li class="icon"><i class="ai taurus"></i></li>
+                        <li class="name">taurus </li>
+
+                    </ul>
+                </li>
+                <li class="sign">
+                    <a href="#">
+                        <ul class="icon-name">
+                            <li class="icon"><i class="ai gemini"></i></li>
+                            <li class="name">gemini </li>
+
+                        </ul>
+                    </a>
+                </li>
+                <li class="sign">
+                    <a href="#">
+                        <ul class="icon-name">
+                            <li class="icon"><i class="ai cancer"></i></li>
+                            <li class="name">cancer </li>
+
+                        </ul>
+                    </a>
+                </li>
+                <li class="sign">
+                    <a href="#">
+                        <ul class="icon-name">
+                            <li class="icon"><i class="ai leo"></i></li>
+                            <li class="name">leo</li>
+
+                        </ul>
+                    </a>
+                </li>
+                <li class="sign">
+                    <a href="#">
+                        <ul class="icon-name">
+                            <li class="icon"><i class="ai virgo"></i></li>
+                            <li class="name">virgo </li>
+
+                        </ul>
+                    </a>
+                </li>
+                <li class="sign">
+                    <a href="#">
+                        <ul class="icon-name">
+                            <li class="icon"><i class="ai libra"></i></li>
+                            <li class="name">libra </li>
+
+                        </ul>
+                    </a>
+                </li>
+                <li class="sign">
+                    <a href="#">
+                        <ul class="icon-name">
+                            <li class="icon"><i class="ai scorpio"></i></li>
+                            <li class="name">scorpio </li>
+
+                        </ul>
+                    </a>
+                </li>
+                <li class="sign">
+                    <a href="#">
+                        <ul class="icon-name">
+                            <li class="icon"><i class="ai sagittarius"></i></li>
+                            <li class="name">sagittarius </li>
+
+                        </ul>
+                    </a>
+                </li>
+                <li class="sign">
+                    <a href="#">
+                        <ul class="icon-name">
+                            <li class="icon"><i class="ai capricorn"></i></li>
+                            <li class="name">capricorn </li>
+
+                        </ul>
+                    </a>
+                </li>
+                <li class="sign">
+                    <a href="#">
+                        <ul class="icon-name">
+                            <li class="icon"><i class="ai aquarius"></i></li>
+                            <li class="name">aquarius </li>
+
+                        </ul>
+                    </a>
+                </li>
+                <li class="sign">
+                    <a href="#">
+                        <ul class="icon-name">
+                            <li class="icon"><i class="ai pisces"></i></li>
+                            <li class="name">pisces </li>
+
+                        </ul>
+                    </a>
+                </li>
+
+
+
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="signUpPopUp">
+        <span onclick="closeSignUp()"></span>
+        <i onclick="closeSignUp()" class="fa fa-close" id="close"
+            style="padding: 20px;font-size: 30px;position:fixed;right: 0;"></i>
+        <div id="signUp">
+            <form>
+                <div style="padding-top: 25px;">
+                    <h3 style="color: white;text-align: left;padding-top: 8px;">ASTROLOGY</h3>
+                </div>
+                <!-- <label> ASTROLOGY </label> -->
+
+                <div style="width: 100%;padding-top: 40px;display: inline-block; ">
+
+                    <i style="position: relative;left: 35px;;font-size: 25px;" class="fa fa-envelope"></i>
+
+                    <input id="email" type="email" name="email" placeholder="Enter your email address">
+
+                </div>
+                <div style="width: 100%;padding-top: 25px;display: inline-block;">
+                    <!-- <i style="position:absolute;top:168px;left: 90px;font-size: 25px;" cla></i>"></i> -->
+                    <i style="position: relative;left: 35px;top:5px;font-size: 35px" ; class="fa fa-lock"></i>
+
+                    <input id="password" type="password" placeholder="Enter your password">
+
+                </div>
+
+
+                <div style="padding-top: 30px; border-radius: 10px;">
+                    <input type="checkbox" style="height: 20px;width: 20px;"><b
+                        style="color: white;font-size: 20px;">Remember
+                        Me</b>
+
+                </div>
+                <div id="submit-bg">
+                    <button id="submit">
+                        REGISTER</button>
+
+
+                </div>
+                <!-- <button onclick="showLogin()"> -->
+                <h5 onclick="showLogin()" style="color: white;padding-top: 20px;cursor: pointer;">Alreday a user? Login
+                </h5>
+                <!-- </button> -->
+            </form>
+        </div>
+    </div>
+    </div>
+
+
+    <div id="loginPopUp">
+        <span onclick="closeLogin()"></span>
+        <i onclick="closeLogin()" class="fa fa-close" id="close"
+            style="padding: 20px;font-size: 30px;position:fixed;right: 0;"></i>
+        <div id="login">
+            <form>
+                <div style="padding-top: 25px;">
+                    <h3 style="color: white;text-align: left;padding-top: 8px;">ASTROLOGY</h3>
+                </div>
+                <!-- <label> ASTROLOGY </label> -->
+
+                <div style="width: 100%;padding-top: 40px;display: inline-block; ">
+
+                    <i style="position: relative;left: 35px;;font-size: 25px;" class="fa fa-envelope"></i>
+
+                    <input id="email" type="email" name="email" placeholder="Enter your email address">
+
+                </div>
+                <div style="width: 100%;padding-top: 25px;display: inline-block;">
+                    <!-- <i style="position:absolute;top:168px;left: 90px;font-size: 25px;" cla></i>"></i> -->
+                    <i style="position: relative;left: 35px;top:5px;font-size: 35px" ; class="fa fa-lock"></i>
+
+                    <input id="password" type="password" placeholder="Enter your password">
+
+                </div>
+
+
+                <div style="padding-top: 30px; border-radius: 10px;">
+                    <input type="checkbox" style="height: 20px;width: 20px;"><b
+                        style="color: white;font-size: 20px;">Remember
+                        Me</b>
+
+                </div>
+                <div id="submit-bg">
+                    <button id="submit">
+                        LOGIN</button>
+
+
+                </div>
+                <h5 onclick="showSignUp()" style="color: white;padding-top: 20px;cursor: pointer;">Not an user? Register
+                </h5>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
